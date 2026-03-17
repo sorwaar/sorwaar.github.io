@@ -1,0 +1,104 @@
+:root {
+  --bg-body: #19202e;
+  --bg-section: #1e2738;
+  --bg-inner: rgba(0, 0, 0, 0.1);
+  --bg-nav: rgba(0, 0, 0, 0.15);
+  --text: #a5b3ce;
+  --text-heading: #ffffff;
+  --text-light: #d7dde9;
+  --text-muted: #8497bc;
+  --accent: #fe655c;
+  --accent-hover: #fe4d43;
+  --cta: #4f6591;
+  --cta-hover: #5a74a3;
+  --highlight: #629feb;
+  --border: rgba(255, 255, 255, 0.2);
+  --border-light: rgba(255, 255, 255, 0.15);
+  --badge-bg: #465981;
+  --stack-bg: rgba(0, 0, 0, 0.2);
+  --input-bg: rgba(0, 0, 0, 0.15);
+  --profile-border: #1e2738;
+  --overlay: rgba(0, 0, 0, 0.5);
+  --logo-bg: rgba(0, 0, 0, 0.1);
+  --skill-border: rgba(255, 255, 255, 0.3);
+  --quote-mark: rgba(255, 255, 255, 0.1);
+  --dot-bg: rgba(255, 255, 255, 0.3);
+  --dot-active: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] {
+  --bg-body: #f0f2f5;
+  --bg-section: #ffffff;
+  --bg-inner: rgba(0, 0, 0, 0.03);
+  --bg-nav: rgba(0, 0, 0, 0.05);
+  --text: #5a6270;
+  --text-heading: #1e2738;
+  --text-light: #3a4150;
+  --text-muted: #7a8599;
+  --border: rgba(0, 0, 0, 0.1);
+  --border-light: rgba(0, 0, 0, 0.08);
+  --badge-bg: #e2e8f0;
+  --stack-bg: rgba(0, 0, 0, 0.05);
+  --input-bg: rgba(0, 0, 0, 0.03);
+  --profile-border: #ffffff;
+  --overlay: rgba(0, 0, 0, 0.3);
+  --logo-bg: rgba(0, 0, 0, 0.04);
+  --skill-border: rgba(0, 0, 0, 0.15);
+  --quote-mark: rgba(0, 0, 0, 0.08);
+  --dot-bg: rgba(0, 0, 0, 0.2);
+  --dot-active: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-body);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-heading);
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+button {
+  font-family: inherit;
+}

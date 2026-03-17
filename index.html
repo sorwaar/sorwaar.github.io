@@ -1,26 +1,40 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="style.min.css">
-	</head>
-	<body>
-		<div class="section-loader">
-					<div id="loading">
-		            <div style="bottom:0;left:0;overflow:hidden;position:absolute;right:0;top:0">
-		                <div style="animation:a-h 0.8s 1.25s 1 linear forwards,a-nt .6s 1.25s 1 cubic-bezier(0,0,.2,1);background:rgb(236, 236, 236);border-radius:50%;height:800px;margin:-448px -400px 0;position:absolute;top:55%;left:50%;transform:scale(0);width:800px"></div>
-		            </div>
-		            <div style="height:100%;text-align:center;margin-top: 20px;">
-		                <div style="height:50%;margin:0 0 -140px"></div>
-		                <div style="height:128px;margin:0 auto;position:relative;width:176px">
-		                    <div>
-									<img src="https://i.postimg.cc/RV7R0Nqj/preloader.png"style="padding:8.5px;">    </div>
-		                </div>
-		                <div id="nlpt"></div>
-		                <div style="animation:a-s .25s 1.25s 1 forwards;opacity:0;font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: 600;" class="msg" >Sorwar Hossain</div>
-		            </div>
-		        </div>
-		    </div>
-	</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Sorwar Hossain - full stack developer building fast and reliable web experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash)
+        }
+      })(window.location)
+    </script>
+    <title>Sorwar Hossain | Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
-<script type="text/javascript">setInterval(function(){location.href="https://sorwaar.github.io/me/";}, 4000);</script>
