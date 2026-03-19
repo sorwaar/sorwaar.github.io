@@ -1,35 +1,61 @@
 import { Link } from 'react-router-dom'
+import yapitImg from '../assets/projects/yapit.png'
+import shobarImg from '../assets/projects/shobar-dhaka.png'
+import robiImg from '../assets/projects/robi-alpha.png'
+import liquidcashImg from '../assets/projects/liquidcash.png'
 
 const projects = [
   {
-    title: 'Robi Alpha',
+    title: 'Yapit — Social Media Platform',
     summary:
-      'A platform where Robi Alpha users can serve different Robi & Airtel users by selling Airtime & different packs (Internet, Minute, Combo) and earn extra rewards in their Robi Alpha account.',
-    stack: ['Laravel', 'PHP', 'MySQL', 'JavaScript'],
+      'A feature-rich social media platform with digital wallet (LiquidCash), crypto integration, multi-vendor ecommerce, event management, places & location discovery, and large-scale media processing with complex algorithms. Built at KAZ Software.',
+    stack: ['Laravel', 'Nuxt.js', 'PostgreSQL', 'Redis', 'Docker'],
+    image: yapitImg,
   },
   {
-    title: 'Shobar Dhaka',
+    title: 'LiquidCash — Digital Wallet & Payments',
     summary:
-      'A one-stop citizen engagement and management platform. Users can post an issue and from the backend an officer can manage and solve the issue.',
-    stack: ['Laravel', 'PHP', 'MySQL', 'JavaScript'],
+      'A digital wallet and payment system integrated within Yapit, supporting crypto transactions, peer-to-peer transfers, and multi-vendor ecommerce payments.',
+    stack: ['Laravel', 'Nuxt.js', 'PostgreSQL', 'Redis'],
+    image: liquidcashImg,
   },
   {
-    title: 'Merchandising System',
+    title: 'Robi Alpha — Telecom Platform',
     summary:
-      'A production monitoring system built with VUE (frontend) and PHP (backend). Features include ACL, Customer Info, Inquiry, Style Reg, BOM, Costing, TNA, and reports.',
+      'A platform where Robi Alpha users serve Robi & Airtel customers by selling Airtime and packs (Internet, Minute, Combo) and earn rewards. Built at Walletmix for Robi Axiata with a high-performance microservices architecture.',
+    stack: ['Laravel', 'PostgreSQL', 'Redis', 'RabbitMQ', 'Docker', 'Kubernetes'],
+    image: robiImg,
+  },
+  {
+    title: 'Shobar Dhaka — Citizen Engagement',
+    summary:
+      'A government citizen engagement and management platform where users post issues and backend officers manage and resolve them. Responsible for the entire backend development at Walletmix.',
+    stack: ['Laravel', 'PHP', 'MySQL', 'JavaScript'],
+    image: shobarImg,
+  },
+  {
+    title: 'Garments Production & Merchandising',
+    summary:
+      'Production monitoring, merchandising, and inventory management systems built for Concordia Garments and Auko Tex. Modules include ACL, Customer Info, Inquiry, Style Registration, BOM, Costing, TNA, and reports. Visited factories in Gazipur and Savar.',
     stack: ['Laravel', 'Vue.js', 'PHP', 'MySQL'],
   },
   {
-    title: 'Office Management System — EDISON Power',
+    title: 'ACI Chemicals — Supply Chain & OMS',
     summary:
-      'A comprehensive office management system with HR, Bill, Requisition, Attendance, and reports modules for EDISON Power.',
-    stack: ['CodeIgniter', 'PHP', 'MySQL', 'HTML', 'JavaScript'],
+      'A supply chain management system and office management system for ACI Chemicals. Features include Customer, Inquiry, Trial, Sample, Negotiation, Work Order, PI, PO, Debit Note, ACL, and reporting. Presented at ACI head office in Dhaka.',
+    stack: ['CodeIgniter', 'PHP', 'MySQL', 'JavaScript'],
   },
   {
-    title: 'Business Management System — ACI Chemicals',
+    title: 'Safara OMS & Mobile Tracker',
     summary:
-      'A full business management system with Customer, Inquiry, Trial, Sample, Negotiation, Work Order, PI, PO, Debit Note, ACL, and reports modules.',
-    stack: ['CodeIgniter', 'PHP', 'MySQL', 'HTML', 'JavaScript'],
+      'An internal office management system for Safara IT (Edison Group) plus an Ionic mobile app for real-time tracking of outgoing marketing personnel and automated TA/DA calculation.',
+    stack: ['CodeIgniter', 'Ionic', 'Angular', 'PHP', 'MySQL'],
+  },
+  {
+    title: 'PBS & SREDA — Government Portals',
+    summary:
+      'Government projects at Nanosoft: Bangladesh Polli Bidduit (PBS1 Mymensingh) and SREDA portal. Worked on-site at SREDA office daily with a dedicated desk for direct client collaboration.',
+    stack: ['PHP', 'CodeIgniter', 'MySQL', 'JavaScript'],
   },
 ]
 
@@ -38,8 +64,8 @@ export default function ProjectsPage() {
     <section className="section projects-section">
       <h3 className="section-heading">My Projects</h3>
       <div className="section-intro limit-max-width mx-auto text-center">
-        Here are some of the key projects I have worked on. I specialize in building large-scale
-        web applications with Laravel, Vue.js, and CodeIgniter. Need help with your project?
+        Here are the key projects from my 9+ year journey — spanning government portals, telecom
+        platforms, garments ERP, fintech, and social media. Need help with your project?
         <div style={{ marginTop: '1rem' }}>
           <Link to="/contact" className="btn btn-cta">
             Start A Conversation <i className="bi bi-arrow-right-short"></i>
@@ -66,7 +92,11 @@ export default function ProjectsPage() {
                 </div>
               </div>
             </div>
-            <div className="project-item-thumb"></div>
+            <div className="project-item-thumb">
+              {p.image ? (
+                <img src={p.image} alt={p.title} className="thumb-img" />
+              ) : null}
+            </div>
           </div>
         ))}
       </div>

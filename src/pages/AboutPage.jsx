@@ -1,21 +1,27 @@
 import { Link } from 'react-router-dom'
 import heroImg from '../assets/hero.png'
+import yapitImg from '../assets/projects/yapit.png'
+import shobarImg from '../assets/projects/shobar-dhaka.png'
+import robiImg from '../assets/projects/robi-alpha.png'
 
 const featuredProjects = [
   {
+    title: 'Yapit',
+    summary:
+      'Social media platform with an integrated digital wallet, multi-vendor ecommerce, event management, places discovery, and large-scale media handling.',
+    image: yapitImg,
+  },
+  {
     title: 'Robi Alpha',
     summary:
-      'A platform where Robi Alpha users can serve Robi & Airtel customers by selling Airtime & packs (Internet, Minute, Combo) and earn rewards.',
+      'Telecom platform for selling airtime and packs with rewards, backed by a high-performance Laravel stack using PostgreSQL, Redis and message queues.',
+    image: robiImg,
   },
   {
     title: 'Shobar Dhaka',
     summary:
-      'A one-stop citizen engagement and management platform where users can post issues and officers can manage and resolve them.',
-  },
-  {
-    title: 'Merchandising System',
-    summary:
-      'A production monitoring system with ACL, Customer Info, Inquiry, Style Reg, BOM, Costing, TNA, and reports modules.',
+      'Citizen engagement platform for reporting and resolving municipal issues, featuring a Laravel backend and admin workflows for officer tasking and tracking.',
+    image: shobarImg,
   },
 ]
 
@@ -25,10 +31,10 @@ const companies = [
   'Safara IT',
   'Nanosoft',
   'Source Tech',
-  'Robi',
-  'Airtel',
-  'EDISON Power',
+  'Robi Axiata',
   'ACI Chemicals',
+  'Edison Group',
+  'Concordia Garments',
 ]
 
 const techIcons = [
@@ -37,16 +43,19 @@ const techIcons = [
   { name: 'CodeIgniter', abbr: 'CI', color: '#ee4623', text: '#fff' },
   { name: 'JavaScript', abbr: 'JS', color: '#f7df1e', text: '#000' },
   { name: 'TypeScript', abbr: 'TS', color: '#3178c6', text: '#fff' },
+  { name: 'Node.js', abbr: 'No', color: '#339933', text: '#fff' },
   { name: 'Vue.js', abbr: 'V', color: '#4fc08d', text: '#fff' },
   { name: 'Nuxt.js', abbr: 'Nx', color: '#00dc82', text: '#fff' },
-  { name: 'Vuetify', abbr: 'Vu', color: '#1867c0', text: '#fff' },
+  { name: 'Angular', abbr: 'Ng', color: '#dd0031', text: '#fff' },
   { name: 'HTML', abbr: 'H', color: '#e34f26', text: '#fff' },
   { name: 'CSS/Sass', abbr: 'S', color: '#cc6699', text: '#fff' },
   { name: 'MySQL', abbr: 'My', color: '#4479a1', text: '#fff' },
   { name: 'PostgreSQL', abbr: 'PG', color: '#4169e1', text: '#fff' },
+  { name: 'Redis', abbr: 'Re', color: '#dc382d', text: '#fff' },
+  { name: 'Docker', abbr: 'D', color: '#2496ed', text: '#fff' },
+  { name: 'Kubernetes', abbr: 'K8', color: '#326ce5', text: '#fff' },
   { name: 'WordPress', abbr: 'W', color: '#21759b', text: '#fff' },
   { name: 'Ionic', abbr: 'Io', color: '#3880ff', text: '#fff' },
-  { name: 'Docker', abbr: 'D', color: '#2496ed', text: '#fff' },
 ]
 
 const skills = [
@@ -100,10 +109,11 @@ export default function AboutPage() {
         <h2 className="intro-name">Sorwar Hossain</h2>
         <div className="profile-intro limit-max-width mx-auto text-center">
           <p>
-            Senior Software Engineer with 8+ years of hands-on experience turning complex business
-            requirements into clean, scalable web applications. I work across the full stack — from
-            architecting Laravel backends and designing databases to crafting polished Vue.js
-            frontends. Take a look at my{' '}
+            Senior Software Engineer with 9+ years of hands-on experience turning complex business
+            requirements into clean, scalable web applications. From government portals and telecom
+            platforms to social media and fintech products — I work across the full stack, architecting
+            Laravel backends, designing databases, and building polished Vue.js / Nuxt.js frontends.
+            Take a look at my{' '}
             <Link to="/projects">project portfolio</Link>.
           </p>
         </div>
@@ -118,13 +128,15 @@ export default function AboutPage() {
       <section className="section">
         <h3 className="section-heading">Featured Projects</h3>
         <div className="section-intro limit-max-width mx-auto text-center">
-          From telecom platforms serving millions to citizen engagement portals and enterprise
-          resource systems — here are some highlights from my recent work.
+          From social media platforms and digital wallets to telecom systems and citizen
+          engagement portals — here are some highlights from my recent work.
         </div>
         <div className="project-grid">
           {featuredProjects.map((p) => (
             <div className="project-card" key={p.title}>
-              <div className="project-thumb"></div>
+              <div className="project-thumb">
+                <img src={p.image} alt={p.title} className="thumb-img" />
+              </div>
               <div className="project-body">
                 <h5 className="project-title">
                   <a href="#">{p.title}</a>
@@ -159,16 +171,15 @@ export default function AboutPage() {
             <span className="quote-mark left">&ldquo;</span>
             <span className="quote-mark right">&rdquo;</span>
             <blockquote className="quote-content">
-              I thrive on solving real-world problems through code — whether it's building a
-              platform that processes thousands of daily transactions or designing a system that
-              streamlines an entire organization's workflow.{' '}
-              <span className="quote-highlight">
-                I take projects from initial concept through to production, with a focus on
-                reliability, performance, and clean architecture.
-              </span>
+              From building my first production-ready applications to architecting large-scale
+              platforms integrating social media, digital payments, and multi-vendor commerce,
+              I've grown across every phase of the software lifecycle. I've collaborated directly
+              with users, enterprises, and government teams — turning complex requirements into
+              scalable, reliable systems. I believe great software is built not just with code,
+              but with a deep understanding of the people it serves.
             </blockquote>
           </div>
-          <div className="source-holder">Sorwar Hossain, Senior Software Engineer</div>
+          <div className="source-holder">— Sorwar Hossain, Senior Software Engineer</div>
         </div>
         <div className="section-cta text-center">
           <Link to="/contact" className="btn btn-cta">
