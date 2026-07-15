@@ -9,7 +9,7 @@ export default function ResumePage() {
 
       <div className="resume-header text-center">
         <h2 className="resume-name">SORWAR HOSSAIN</h2>
-        <div className="resume-role-title">SENIOR SOFTWARE ENGINEER</div>
+        <div className="resume-role-title">SENIOR SOFTWARE ENGINEER | FULL STACK PHP / LARAVEL</div>
         <div className="resume-contact">
           <span>
             <i className="bi bi-telephone"></i> +880 17 5033 0032
@@ -18,7 +18,7 @@ export default function ResumePage() {
             <i className="bi bi-envelope"></i> sorwar.dev@gmail.com
           </span>
           <span>
-            <i className="bi bi-geo-alt"></i> Mirpur-1, Dhaka
+            <i className="bi bi-geo-alt"></i> Nikunja-2, Dhaka
           </span>
         </div>
       </div>
@@ -33,9 +33,11 @@ export default function ResumePage() {
               ABOUT ME
             </h4>
             <p>
-              Senior Software Engineer with extensive experience delivering production-grade web
-              applications. Skilled in backend architecture with Laravel, scalable API design,
-              and frontend integrations using Nuxt.js and modern JavaScript frameworks.
+              Senior Software Engineer (Full Stack PHP/Laravel) with 9+ years delivering complete
+              product slices — Laravel backends, Vue/Nuxt and Angular/Ionic frontends,
+              MySQL/PostgreSQL data models, and production deployments. Experienced building REST
+              APIs with Sanctum/Passport auth, wallet &amp; payment flows, marketplace/e-commerce
+              features, RBAC admin dashboards, Redis/queue pipelines, and Linux operations.
             </p>
           </div>
 
@@ -50,23 +52,40 @@ export default function ResumePage() {
             <div className="resume-timeline">
               <div className="resume-timeline-item">
                 <div className="resume-position-meta">
-                  <span className="resume-position-time">May 2021 - Present</span>
+                  <span className="resume-position-time">Feb 2021 - Present</span>
                   <span className="resume-company-name">KAZ Software Limited</span>
                 </div>
                 <h5 className="resume-position-title">Senior Software Engineer</h5>
                 <ul className="resume-timeline-list">
                   <li>
-                    Leading end-to-end development of a large-scale platform (Yapit) combining social
-                    media, digital wallet, and multi-vendor systems.
+                    Led full-stack delivery of Yapit: Laravel API + Nuxt.js frontend for a
+                    social/marketplace product with wallet (LiquidCash), multi-vendor ecommerce,
+                    events, places, and media workflows.
                   </li>
-                  <li>Designed scalable backend architecture using Laravel, Nuxt.js, and service patterns.</li>
-                  <li>Built and maintained high-performance REST APIs for web, mobile, and third-party integrations.</li>
-                  <li>Implemented CI/CD pipelines and automated deployment workflows.</li>
-                  <li>Managed server infrastructure, deployments, and production environments.</li>
-                  <li>Optimized performance using Redis caching, queues, and database tuning.</li>
-                  <li>Led development team, handled code reviews, and sprint planning.</li>
-                  <li>Conducted requirement analysis and worked directly with clients and stakeholders.</li>
-                  <li>Ensured API security, authentication, and system reliability.</li>
+                  <li>
+                    Built and consumed REST APIs secured with token authentication (Sanctum/Passport
+                    patterns); implemented frontend auth sessions and permission-aware UI states.
+                  </li>
+                  <li>
+                    Developed wallet and checkout experiences spanning backend transaction rules and
+                    Nuxt-facing user journeys (P2P, merchant payments, crypto-capable flows).
+                  </li>
+                  <li>
+                    Implemented Redis caching, queue jobs, and scheduled tasks to keep media-heavy
+                    and transactional UX responsive under load.
+                  </li>
+                  <li>
+                    Created admin panels and analytics/reporting surfaces for operators and
+                    merchants; applied RBAC across API and UI.
+                  </li>
+                  <li>
+                    Owned CI/CD, Linux deployments, and full-stack production debugging (API ↔ DB ↔
+                    frontend regressions).
+                  </li>
+                  <li>
+                    Collaborated with clients on product architecture; led reviews emphasizing clean
+                    code, component/API contracts, and refactoring of aging modules.
+                  </li>
                 </ul>
               </div>
 
@@ -77,12 +96,22 @@ export default function ResumePage() {
                 </div>
                 <h5 className="resume-position-title">Software Developer</h5>
                 <ul className="resume-timeline-list">
-                  <li>Developed backend systems for high-scale telecom platforms.</li>
-                  <li>Built scalable applications using Laravel, PostgreSQL, and Redis.</li>
-                  <li>Designed and optimized REST APIs for recharge, rewards, and campaign systems.</li>
-                  <li>Worked with message queues (RabbitMQ) for asynchronous processing.</li>
-                  <li>Contributed to GitLab CI/CD pipelines for automated builds and deployments.</li>
-                  <li>Contributed to development and enhancement of payment gateway and SMS systems</li>
+                  <li>
+                    Delivered Laravel backends and supporting JS frontends for telecom and government
+                    products (Robi Alpha, Shobar Dhaka).
+                  </li>
+                  <li>
+                    Built REST APIs for merchant recharge/rewards/campaigns; integrated payment
+                    gateway and SMS services powering live customer flows.
+                  </li>
+                  <li>
+                    Used PostgreSQL, Redis, and RabbitMQ queues for scalable async work; contributed
+                    to Docker/Kubernetes-oriented delivery.
+                  </li>
+                  <li>
+                    Owned Shobar Dhaka backend and admin/officer workflow UIs: issue intake,
+                    assignment, tracking, and reporting.
+                  </li>
                 </ul>
               </div>
 
@@ -93,26 +122,36 @@ export default function ResumePage() {
                 </div>
                 <h5 className="resume-position-title">Software Developer</h5>
                 <ul className="resume-timeline-list">
-                  <li>Developed inventory and supply chain systems for enterprise clients.</li>
-                  <li>Built production and merchandising solutions for the garment industry.</li>
-                  <li>Designed and implemented backend systems using PHP frameworks and MySQL.</li>
-                  <li>Developed an Ionic mobile app for real-time staff tracking and expense management.</li>
-                  <li>Gathered requirements directly from clients and delivered customized solutions.</li>
-                  <li>Promoted from Junior Developer to Software Developer within one year.</li>
+                  <li>
+                    Built full-stack enterprise OMS and merchandising systems (ACI Chemicals,
+                    Concordia/garments clients) with PHP backends, JS UIs, ACL, and rich reporting.
+                  </li>
+                  <li>
+                    Designed MySQL schemas and admin dashboards for commercial workflows (inquiry →
+                    trial/sample → negotiation → work order / PI / PO).
+                  </li>
+                  <li>
+                    Shipped an Ionic/Angular mobile app + backend for realtime staff tracking and
+                    automated TA/DA expense logic.
+                  </li>
+                  <li>
+                    Partnered with stakeholders on requirements and UX iterations; promoted from
+                    Junior Developer to Software Developer within one year.
+                  </li>
                 </ul>
               </div>
 
               <div className="resume-timeline-item">
                 <div className="resume-position-meta">
-                  <span className="resume-position-time">May 2017 - Oct 2017</span>
+                  <span className="resume-position-time">May 2017 - Nov 2017</span>
                   <span className="resume-company-name">Nanosoft</span>
                 </div>
                 <h5 className="resume-position-title">Junior Developer</h5>
                 <ul className="resume-timeline-list">
-                  <li>Worked on government and enterprise applications using PHP and CodeIgniter.</li>
-                  <li>Assisted in backend development and database design.</li>
-                  <li>Collaborated with clients for requirement understanding and updates.</li>
-                  <li>Gained hands-on experience with Git, SVN, and Linux environments.</li>
+                  <li>
+                    Developed PHP/CodeIgniter + MySQL government portals (PBS, SREDA) with on-site
+                    client collaboration, bug fixing, and Linux/Git workflows.
+                  </li>
                 </ul>
               </div>
 
@@ -123,9 +162,10 @@ export default function ResumePage() {
                 </div>
                 <h5 className="resume-position-title">Intern</h5>
                 <ul className="resume-timeline-list">
-                  <li>Built a full-stack matrimony platform using PHP, MySQL, HTML, CSS, and JavaScript.</li>
-                  <li>Converted the project into CodeIgniter and developed the Source Tech official website.</li>
-                  <li>Learned deployment and hosting using cPanel and basic software lifecycle practices.</li>
+                  <li>
+                    Built a full-stack matrimony web app (PHP/MySQL/JS), migrated to CodeIgniter MVC,
+                    and deployed on shared hosting (cPanel); also delivered the company website.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -155,9 +195,15 @@ export default function ResumePage() {
                 'MySQL',
                 'PostgreSQL',
                 'Redis',
+                'RabbitMQ',
                 'Docker',
+                'Kubernetes',
+                'Sanctum',
+                'Passport',
                 'Git',
-                'WordPress',
+                'GitLab CI/CD',
+                'Linux',
+                'Nginx',
               ].map((t) => (
                 <span className="resume-skill-badge" key={t}>
                   {t}
@@ -171,10 +217,18 @@ export default function ResumePage() {
               <span className="resume-section-heading-icon">
                 <i className="bi bi-people"></i>
               </span>
-              SOFT SKILLS
+              DOMAINS
             </h4>
             <div className="resume-skill-tags">
-              {['Team Leadership', 'Client Management', 'Requirement Gathering', 'Problem Solving', 'Time Management', 'Communication'].map((t) => (
+              {[
+                'Wallets & Payments',
+                'Marketplace',
+                'E-commerce',
+                'RBAC / Admin Panels',
+                'Reporting',
+                'Telecom',
+                'Government',
+              ].map((t) => (
                 <span className="resume-skill-badge" key={t}>
                   {t}
                 </span>
@@ -190,20 +244,32 @@ export default function ResumePage() {
               KEY PROJECTS
             </h4>
             <div className="resume-project-item">
-              <i className="bi bi-arrow-right-short"></i> <strong>Yapit</strong>
-              <p>Social media platform with digital wallet, crypto, ecommerce, and event management.</p>
-            </div>
-            <div className="resume-project-item">
-              <i className="bi bi-arrow-right-short"></i> <strong>LiquidCash</strong>
-              <p>Digital wallet and payment system with crypto support and multi-vendor ecommerce.</p>
+              <i className="bi bi-arrow-right-short"></i> <strong>Yapit + LiquidCash</strong>
+              <p>
+                Full-stack social marketplace with wallet/payments, multi-vendor ecommerce, and
+                events.
+              </p>
             </div>
             <div className="resume-project-item">
               <i className="bi bi-arrow-right-short"></i> <strong>Robi Alpha</strong>
-              <p>Telecom platform for selling Airtime & packs with rewards, built on Laravel, Redis & Kubernetes.</p>
+              <p>
+                Telecom merchant airtime/pack sales with rewards — Laravel, Redis, RabbitMQ,
+                Kubernetes.
+              </p>
             </div>
             <div className="resume-project-item">
-              <i className="bi bi-arrow-right-short"></i> <strong>Shobar Dhaka — Citizen Engagement</strong>
-              <p>Citizen engagement platform for reporting issues; led backend development at Walletmix.</p>
+              <i className="bi bi-arrow-right-short"></i> <strong>Shobar Dhaka</strong>
+              <p>
+                Citizen + officer workflows with admin panels and reporting; full backend ownership.
+              </p>
+            </div>
+            <div className="resume-project-item">
+              <i className="bi bi-arrow-right-short"></i> <strong>ACI Chemicals OMS</strong>
+              <p>Enterprise supply-chain OMS with dashboards, ACL, and operational analytics.</p>
+            </div>
+            <div className="resume-project-item">
+              <i className="bi bi-arrow-right-short"></i> <strong>Safara OMS &amp; Mobile Tracker</strong>
+              <p>Office management system plus Ionic/Angular staff tracking and expense app.</p>
             </div>
           </div>
 
@@ -215,7 +281,7 @@ export default function ResumePage() {
               EDUCATION
             </h4>
             <div className="resume-edu-item">
-              <div className="resume-degree">B.Sc in Computer Science Engineering</div>
+              <div className="resume-degree">B.Sc. in Computer Science &amp; Engineering</div>
               <div className="resume-degree-org">Southeast University, Bangladesh</div>
               <div className="resume-degree-time">2018 - 2023</div>
             </div>
@@ -234,7 +300,7 @@ export default function ResumePage() {
               LANGUAGES
             </h4>
             <p>Bengali (Native)</p>
-            <p>English</p>
+            <p>English (Professional)</p>
           </div>
         </div>
       </div>

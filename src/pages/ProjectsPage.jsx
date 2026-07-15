@@ -6,55 +6,55 @@ import liquidcashImg from '../assets/projects/liquidcash.png'
 
 const projects = [
   {
-    title: 'Yapit — Social Media Platform',
+    title: 'Yapit + LiquidCash — Full Stack Social Marketplace & Wallet',
     summary:
-      'A feature-rich social media platform with digital wallet (LiquidCash), crypto integration, multi-vendor ecommerce, event management, places & location discovery, and large-scale media processing with complex algorithms. Built at KAZ Software.',
+      'End-to-end product: Nuxt frontend + Laravel APIs + wallet/payments, multi-vendor ecommerce, events/booking modules, places discovery, and community/influencer-oriented features. Built at KAZ Software.',
     stack: ['Laravel', 'Nuxt.js', 'PostgreSQL', 'Redis', 'Docker'],
     image: yapitImg,
   },
   {
     title: 'LiquidCash — Digital Wallet & Payments',
     summary:
-      'A digital wallet and payment system integrated within Yapit, supporting crypto transactions, peer-to-peer transfers, and multi-vendor ecommerce payments.',
+      'Digital wallet and payment subsystem within Yapit supporting crypto transactions, peer-to-peer transfers, and multi-vendor ecommerce payments.',
     stack: ['Laravel', 'Nuxt.js', 'PostgreSQL', 'Redis'],
     image: liquidcashImg,
   },
   {
-    title: 'Robi Alpha — Telecom Platform',
+    title: 'Robi Alpha — Telecom Merchant Experience',
     summary:
-      'A platform where Robi Alpha users serve Robi & Airtel customers by selling Airtime and packs (Internet, Minute, Combo) and earn rewards. Built at Walletmix for Robi Axiata with a high-performance microservices architecture.',
+      'Merchant sales of airtime and packs with rewards; Laravel services, queues, caching, and containerized ops for Robi Axiata. Built at Walletmix.',
     stack: ['Laravel', 'PostgreSQL', 'Redis', 'RabbitMQ', 'Docker', 'Kubernetes'],
     image: robiImg,
   },
   {
-    title: 'Shobar Dhaka — Citizen Engagement',
+    title: 'Shobar Dhaka — Citizen + Officer Full Stack Workflows',
     summary:
-      'A government citizen engagement and management platform where users post issues and backend officers manage and resolve them. Responsible for the entire backend development at Walletmix.',
+      'Issue reporting UX, officer admin panels, status tracking, and reporting dashboards; full backend ownership with JS frontends at Walletmix.',
     stack: ['Laravel', 'PHP', 'MySQL', 'JavaScript'],
     image: shobarImg,
   },
   {
-    title: 'Garments Production & Merchandising',
+    title: 'ACI Chemicals OMS — Enterprise Admin & Reporting',
     summary:
-      'Production monitoring, merchandising, and inventory management systems built for Concordia Garments and Auko Tex. Modules include ACL, Customer Info, Inquiry, Style Registration, BOM, Costing, TNA, and reports. Visited factories in Gazipur and Savar.',
-    stack: ['Laravel', 'Vue.js', 'PHP', 'MySQL'],
-  },
-  {
-    title: 'ACI Chemicals — Supply Chain & OMS',
-    summary:
-      'A supply chain management system and office management system for ACI Chemicals. Features include Customer, Inquiry, Trial, Sample, Negotiation, Work Order, PI, PO, Debit Note, ACL, and reporting. Presented at ACI head office in Dhaka.',
+      'Full-stack OMS with dashboards, ACL, commercial document flows (inquiry, trial, sample, negotiation, work orders, PI/PO, debit notes), and operational analytics.',
     stack: ['CodeIgniter', 'PHP', 'MySQL', 'JavaScript'],
   },
   {
     title: 'Safara OMS & Mobile Tracker',
     summary:
-      'An internal office management system for Safara IT (Edison Group) plus an Ionic mobile app for real-time tracking of outgoing marketing personnel and automated TA/DA calculation.',
+      'Office management web system plus Ionic/Angular mobile tracking/expense app integrated with PHP APIs for Safara IT (Edison Group).',
     stack: ['CodeIgniter', 'Ionic', 'Angular', 'PHP', 'MySQL'],
+  },
+  {
+    title: 'Garments Production & Merchandising',
+    summary:
+      'Production monitoring, merchandising, and inventory systems for Concordia Garments and Auko Tex — ACL, style registration, BOM, costing, TNA, and reports.',
+    stack: ['Laravel', 'Vue.js', 'PHP', 'MySQL'],
   },
   {
     title: 'PBS & SREDA — Government Portals',
     summary:
-      'Government projects at Nanosoft: Bangladesh Polli Bidduit (PBS1 Mymensingh) and SREDA portal. Worked on-site at SREDA office daily with a dedicated desk for direct client collaboration.',
+      'Government projects at Nanosoft: Bangladesh Polli Bidduit (PBS1 Mymensingh) and SREDA portal, with on-site client collaboration.',
     stack: ['PHP', 'CodeIgniter', 'MySQL', 'JavaScript'],
   },
 ]

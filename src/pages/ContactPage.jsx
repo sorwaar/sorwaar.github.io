@@ -36,7 +36,7 @@ export default function ContactPage() {
             </div>
             <div className="contact-card-body">
               <h5 className="contact-card-label">Location</h5>
-              <span>Mirpur-1, Dhaka, Bangladesh</span>
+              <span>Nikunja-2, Dhaka, Bangladesh</span>
             </div>
           </div>
 

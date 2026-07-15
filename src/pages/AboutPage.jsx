@@ -6,21 +6,21 @@ import robiImg from '../assets/projects/robi-alpha.png'
 
 const featuredProjects = [
   {
-    title: 'Yapit',
+    title: 'Yapit + LiquidCash',
     summary:
-      'Social media platform with an integrated digital wallet, multi-vendor ecommerce, event management, places discovery, and large-scale media handling.',
+      'Full-stack social marketplace with Nuxt frontend, Laravel APIs, digital wallet/payments, multi-vendor ecommerce, events, and media handling.',
     image: yapitImg,
   },
   {
     title: 'Robi Alpha',
     summary:
-      'Telecom platform for selling airtime and packs with rewards, backed by a high-performance Laravel stack using PostgreSQL, Redis and message queues.',
+      'Telecom merchant platform for airtime and pack sales with rewards — Laravel, PostgreSQL, Redis, RabbitMQ, Docker, and Kubernetes.',
     image: robiImg,
   },
   {
     title: 'Shobar Dhaka',
     summary:
-      'Citizen engagement platform for reporting and resolving municipal issues, featuring a Laravel backend and admin workflows for officer tasking and tracking.',
+      'Citizen + officer engagement platform with issue reporting, admin workflows, status tracking, and reporting — full backend ownership.',
     image: shobarImg,
   },
 ]
@@ -54,7 +54,7 @@ const techIcons = [
   { name: 'Redis', abbr: 'Re', color: '#dc382d', text: '#fff' },
   { name: 'Docker', abbr: 'D', color: '#2496ed', text: '#fff' },
   { name: 'Kubernetes', abbr: 'K8', color: '#326ce5', text: '#fff' },
-  { name: 'WordPress', abbr: 'W', color: '#21759b', text: '#fff' },
+  { name: 'RabbitMQ', abbr: 'RQ', color: '#ff6600', text: '#fff' },
   { name: 'Ionic', abbr: 'Io', color: '#3880ff', text: '#fff' },
 ]
 
@@ -62,17 +62,17 @@ const skills = [
   {
     icon: 'bi-code-slash',
     title: 'Backend Development',
-    desc: 'Building robust web applications with PHP (Laravel, CodeIgniter), REST APIs, and server-side architecture.',
+    desc: 'PHP (Laravel, CodeIgniter), REST APIs, Sanctum/Passport auth, queues, Redis caching, and secure payment/wallet backends.',
   },
   {
     icon: 'bi-layout-text-window-reverse',
     title: 'Frontend Development',
-    desc: 'Creating responsive interfaces with Vue.js, Nuxt.js, Vuetify, HTML, CSS/Sass, and JavaScript.',
+    desc: 'Vue.js, Nuxt.js, Angular, Ionic, TypeScript, HTML, CSS/Sass — admin dashboards and customer-facing UIs.',
   },
   {
     icon: 'bi-database-check',
-    title: 'Database Design',
-    desc: 'Database planning, schema design, and optimization with MySQL and PostgreSQL for high-performance applications.',
+    title: 'Database & Async',
+    desc: 'MySQL/PostgreSQL schema design and optimization, Redis caching, RabbitMQ queues, and cron/scheduler pipelines.',
   },
   {
     icon: 'bi-phone',
@@ -83,18 +83,18 @@ const skills = [
         Development
       </>
     ),
-    desc: 'Building cross-platform mobile applications with Ionic and Angular for Android and iOS.',
+    desc: 'Cross-platform mobile apps with Ionic and Angular for Android and iOS, integrated with PHP APIs.',
   },
   {
     icon: 'bi-people',
     title: (
       <>
-        Team Lead &amp;
+        Full Stack
         <br />
-        Project Management
+        Ownership
       </>
     ),
-    desc: 'Managing team members, client communication, requirement analysis, and delivering projects from conception to completion.',
+    desc: 'End-to-end product delivery: architecture, CI/CD, Linux/Docker/Kubernetes deploys, and production debugging.',
   },
 ]
 
@@ -109,11 +109,11 @@ export default function AboutPage() {
         <h2 className="intro-name">Sorwar Hossain</h2>
         <div className="profile-intro limit-max-width mx-auto text-center">
           <p>
-            Senior Software Engineer with 9+ years of hands-on experience turning complex business
-            requirements into clean, scalable web applications. From government portals and telecom
-            platforms to social media and fintech products — I work across the full stack, architecting
-            Laravel backends, designing databases, and building polished Vue.js / Nuxt.js frontends.
-            Take a look at my{' '}
+            Senior Software Engineer (Full Stack PHP/Laravel) with 9+ years delivering complete product
+            slices — Laravel backends, Vue/Nuxt and Angular/Ionic frontends, MySQL/PostgreSQL data
+            models, and production deployments. From telecom and fintech wallets to social marketplaces
+            and government portals, I build REST APIs, payment flows, admin dashboards, and polished
+            UIs end-to-end. Take a look at my{' '}
             <Link to="/projects">project portfolio</Link>.
           </p>
         </div>
