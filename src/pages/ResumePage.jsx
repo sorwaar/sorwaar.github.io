@@ -18,7 +18,7 @@ export default function ResumePage() {
             <i className="bi bi-envelope"></i> sorwar.dev@gmail.com
           </span>
           <span>
-            <i className="bi bi-geo-alt"></i> Nikunja-2, Dhaka
+            <i className="bi bi-geo-alt"></i> Mirpur-1, Dhaka
           </span>
         </div>
       </div>
