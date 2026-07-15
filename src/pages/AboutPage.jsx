@@ -106,20 +106,22 @@ export default function AboutPage() {
         <div className="profile-holder">
           <img className="profile-pic" src={heroImg} alt="Sorwar Hossain" />
         </div>
+        <p className="intro-role">Senior Software Engineer · Full Stack PHP / Laravel</p>
         <h2 className="intro-name">Sorwar Hossain</h2>
         <div className="profile-intro limit-max-width mx-auto text-center">
           <p>
-            Senior Software Engineer (Full Stack PHP/Laravel) with 9+ years delivering complete product
-            slices — Laravel backends, Vue/Nuxt and Angular/Ionic frontends, MySQL/PostgreSQL data
-            models, and production deployments. From telecom and fintech wallets to social marketplaces
-            and government portals, I build REST APIs, payment flows, admin dashboards, and polished
-            UIs end-to-end. Take a look at my{' '}
+            9+ years shipping telecom, fintech, marketplace, and government products —
+            Laravel APIs, Vue/Nuxt UIs, wallets &amp; payments, and production-ready delivery.
+            Explore my{' '}
             <Link to="/projects">project portfolio</Link>.
           </p>
         </div>
         <div className="section-cta text-center">
           <Link to="/resume" className="btn btn-cta">
             View Resume <i className="bi bi-arrow-right-short"></i>
+          </Link>
+          <Link to="/contact" className="btn btn-ghost">
+            Let&apos;s Talk
           </Link>
         </div>
       </section>

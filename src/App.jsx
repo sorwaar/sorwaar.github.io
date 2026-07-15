@@ -176,7 +176,7 @@ function App() {
           onThemeToggle={toggleTheme}
         />
 
-        <div className="page-content">
+        <div className="page-content" key={location.pathname}>
           <Routes>
             <Route path="/" element={<AboutPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
